@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+    <link rel="stylesheet" href="nuovo.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Persone</title>
+</head>
+<body>
+    <h1>Modulo inserimento persone</h1>
+    <form id="person-form" onsubmit="return inviaModulo()">
+        <fieldset>
+            <legend>Dati Personali</legend>
+            <label for="name">Nome:</label><br>
+            <input type="text" class="input input-bordered w-full max-w-xs" />
+
+            <label for="surname">Cognome:</label><br>
+            <input type="text" class="input input-bordered w-full max-w-xs" />
+            
+            <label for="email">Email:</label><br>
+            <input type="email" class="input input-bordered w-full max-w-xs" />
+
+            <label for="birthday">Data di nascita:</label><br>
+            <input type="date" class="input input-bordered w-full max-w-xs" />
+
+            <label for="phone">Numero di Telefono:</label><br>
+            <input type="tel" class="input input-bordered w-full max-w-xs" />
+
+            <label for="country">Paese:</label><br>
+            <input type="text" class="input input-bordered w-full max-w-xs" />
+
+            <label for="province">Provincia:</label><br>
+            <input type="text" class="input input-bordered w-full max-w-xs" />
+        </fieldset>
+
+        <div>
+            <br>
+            <button type="button" onclick="aggiungiPersona()">Aggiungi Persona</button>
+            <button type="button" onclick="rimuoviTutti()">Rimuovi Tutti</button>
+            <button type="submit">Invia Modulo</button>
+        </div>
+    </form>
+
+    <div id="mostraDati"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
